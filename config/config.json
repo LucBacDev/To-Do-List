@@ -1,0 +1,34 @@
+{
+  "name": "source-base-go",
+  "env": "local",
+  "host": {
+    "address": "0.0.0.0",
+    "port": 8000
+  },
+  "jwt": {
+    "secretKey": "secretKey",
+    "header": "Authorization",
+    "schema": "Bearer",
+    "accessMaxAge": 604800000000000,
+    "refeshMaxAge": 691200000000000
+  },
+  "service": {},
+  "database": {
+    "postgres": {
+      "timeout": 5000,
+      "host": "3.113.255.36",
+      "port": "5432",
+      "dbname": "postgres",
+      "user": "postgres",
+      "password": "secret"
+    },
+    "sql": {
+        "timeout": 5000,
+        "host": "127.0.0.1",
+        "port": "3306",
+        "dbname": "todo_list",
+        "user": "root",
+        "password": ""
+      }
+  }
+}
